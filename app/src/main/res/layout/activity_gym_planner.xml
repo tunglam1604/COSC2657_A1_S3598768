@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tunglam.yourhealthmate.GymPlanner">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <TextView
+        android:id="@+id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#D50000"
+        android:textSize="30sp"
+        android:text="Gym Planner"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.565" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/act1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Activity"
+                android:textColor="#76FF03"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <EditText
+
+                android:id="@+id/calo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#FF6D00"
+                app:layout_constraintLeft_toRightOf="@+id/act1"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <EditText
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act1"
+        android:id="@+id/act2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#76FF03"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Activity"
+        android:layout_marginTop="0dp" />
+
+    <EditText
+
+        app:layout_constraintLeft_toRightOf="@+id/act2"
+        app:layout_constraintTop_toBottomOf="@+id/calo1"
+        android:id="@+id/calo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:textColor="#FF6D00"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <EditText
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act2"
+        android:id="@+id/act3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#76FF03"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Activity"
+        android:layout_marginTop="0dp" />
+
+    <EditText
+
+        app:layout_constraintLeft_toRightOf="@+id/act3"
+        app:layout_constraintTop_toBottomOf="@+id/act2"
+        android:id="@+id/calo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:textColor="#FF6D00"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0" />
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <EditText
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act3"
+        android:id="@+id/act4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#76FF03"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Activity"
+        android:layout_marginTop="0dp" />
+
+    <EditText
+
+        app:layout_constraintLeft_toRightOf="@+id/act4"
+        app:layout_constraintTop_toBottomOf="@+id/calo3"
+        android:id="@+id/calo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:textColor="#FF6D00"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0" />
+
+
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+    <EditText
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act4"
+        android:id="@+id/act5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#76FF03"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Activity"
+        android:layout_marginTop="0dp" />
+
+    <EditText
+
+        app:layout_constraintLeft_toRightOf="@+id/act5"
+        app:layout_constraintTop_toBottomOf="@+id/act4"
+        android:id="@+id/calo5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:textColor="#FF6D00"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0" />
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+    <EditText
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act5"
+        android:id="@+id/act6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="#76FF03"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="Activity"
+        android:layout_marginTop="0dp" />
+
+    <EditText
+
+        app:layout_constraintLeft_toRightOf="@+id/act6"
+        app:layout_constraintTop_toBottomOf="@+id/calo5"
+        android:id="@+id/calo6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="5"
+        android:textColor="#FF6D00"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="0" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="9dp">
+
+    <TextView
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/act6"
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Calories: "
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+
+        app:layout_constraintLeft_toRightOf="@+id/total"
+        app:layout_constraintTop_toBottomOf="@+id/calo6"
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="_____________" />
+            </LinearLayout>
+
+</LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tunglam.yourhealthmate.MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/imgBMI"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/bmi"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="96dp"
+        android:onClick="onClickBMI"/>
+
+    <TextView
+        android:id="@+id/textBMI"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textColor="#D50000"
+        android:textSize="14sp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintHorizontal_bias="0.054"
+        android:onClick="onClickBMI"/>
+
+    <ImageButton
+        android:id="@+id/imageDiet"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@+id/imgBMI"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/diet"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="96dp"
+        android:onClick="onClickDIET"/>
+
+    <TextView
+        android:id="@+id/textDIET"
+        app:layout_constraintLeft_toRightOf="@+id/textBMI"
+        app:layout_constraintTop_toBottomOf="@+id/imageDiet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diet Planner"
+        android:textColor="#D50000"
+        android:textSize="14sp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="36dp"
+        android:onClick="onClickDIET"/>
+
+    <ImageButton
+        android:id="@+id/imageSleep"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@+id/imageDiet"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sleep"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="96dp"
+        android:onClick="onClickSLEEP"/>
+
+    <TextView
+        android:id="@+id/textSLEEP"
+        app:layout_constraintLeft_toRightOf="@+id/textDIET"
+        app:layout_constraintTop_toBottomOf="@+id/imageSleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleep Schedule"
+        android:textColor="#D50000"
+        android:textSize="14sp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="34dp"
+        android:onClick="onClickSLEEP"/>
+
+
+    <ImageButton
+        android:id="@+id/imgWATCH"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/stopwatch"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgBMI"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="179dp"
+        android:onClick="onClickWATCH"/>
+
+    <TextView
+        android:id="@+id/textWATCH"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgWATCH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gym StopWatch"
+        android:textColor="#D50000"
+        android:textSize="14sp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="64dp"
+        android:onClick="onClickWATCH"/>
+
+
+    <ImageButton
+        android:id="@+id/imgGYM"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/gym"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toRightOf="@+id/imgWATCH"
+        app:layout_constraintTop_toTopOf="@+id/imageDiet"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="179dp"
+        android:onClick="onClickGYM"/>
+
+    <TextView
+        android:id="@+id/textGymPlanner"
+        app:layout_constraintLeft_toRightOf="@+id/textWATCH"
+        app:layout_constraintTop_toBottomOf="@+id/imgGYM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gym Planner"
+        android:textColor="#D50000"
+        android:textSize="14sp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="36dp"
+        android:onClick="onClickGYM"/>
+
+
+</android.support.constraint.ConstraintLayout>
